@@ -1,0 +1,86 @@
+.review {
+	display: flex;
+	background: url(../../img/3_reviews/leaf.png) right top 20px no-repeat;
+	background-color: #F8FAF9;
+	margin-bottom: 15px;
+	overflow: hidden;
+	position: relative;
+	max-width: 940px;
+	&::before {
+		content: "";
+		display: block;
+		width: 90px;
+		height: 90px;
+		background: $white;
+		border-radius: 50%;
+		position: absolute;
+		left: 50%;
+		transform: translateX(-50%);
+		top: -65px;
+	}
+	&__pic {
+		margin: 40px;
+	}
+	&__content {
+		display: flex;
+		flex: 1;
+		flex-direction: column;
+		align-items: flex-start;
+		padding: 70px 142px 0px 0px;
+	}
+	&__title {
+		font-weight: bold;
+		font-size: 27px;
+		line-height: 32px;
+		color: $dark;
+		margin-bottom: 12px;
+	}
+	&__text {
+		max-width: 435px;
+		font-size: $baseFontSize;
+		line-height: 22px;
+		font-weight: 300px;
+		text-align: left;
+		margin-bottom: 25px;
+	}
+	&__author {
+		max-width: 463px;
+		font-size: $baseFontSize;
+		line-height: 24px;
+		font-weight: 500;
+		text-align: left;
+	}
+	&-selector {
+		display: flex;
+		justify-content: center;
+		width: 97%;
+		margin-bottom: 70px;
+		&__item {
+			margin-right: 6px;
+			width: 80px;
+			height: 80px;
+			border: 4px solid transparent;
+			border-radius: 50%;
+			overflow: hidden;
+			position: relative;
+			&--active {
+				border: 4px solid $green;
+			}
+		}
+		&__link {
+			position: absolute;
+			top: 0;
+			left: 0;
+			bottom: 0;
+			right: 0;
+			display: block;
+		}
+		&__pic {
+			display: block;
+			width: 100%;
+			height: 100%;
+			object-fit: cover;
+		}
+	}
+
+}

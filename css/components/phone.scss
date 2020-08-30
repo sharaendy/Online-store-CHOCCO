@@ -1,0 +1,15 @@
+.phone {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	z-index: 10;
+	&__number {
+		font-size: 22px ;
+		&::before {
+			content: url(/img/1_welcom/header/phone/phone.png);
+			margin-right: 6px;
+			width: 12px;
+			height: 12px;
+		}
+	}
+}

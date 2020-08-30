@@ -1,0 +1,30 @@
+.subhero {
+	display: flex;
+	width: 53%;
+	margin-top: 86px;
+	&__item {
+		display: flex;
+		justify-content: center;
+		align-items: flex-start;
+		margin-right: 47px;
+			&:last-child {margin-right: 0px;}
+	}
+	
+	&__pic {
+		width: 38px;
+		height: 36px;
+		margin-right: 14px;
+	}
+	
+	&__img {
+		object-fit: fill;
+		width: 100%;
+		height: 100%;
+	}
+	
+	&__text {
+		max-width: 75px;
+		font-size: 16px;
+		font-weight: normal;
+	}
+}

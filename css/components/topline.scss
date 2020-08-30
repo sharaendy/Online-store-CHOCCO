@@ -1,0 +1,40 @@
+.topline {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
+	&--wherefore {
+		margin-top: 103px;
+		max-width: 97%;
+	}
+	&--rewies {
+		margin-bottom: 32px;
+		max-width: 97%;
+	}
+	&--deliver {
+		margin-top: 62px;
+		margin-bottom: 60px;
+		max-width: 97%;
+	}
+	&__title {
+		display: block;
+	}
+	&__title-h2 {
+		font-size: 48px;
+		text-transform: uppercase;;
+		font-weight: bold;
+		color: $dark;
+		&-color {
+			color: #365A49;
+		}
+	}
+	&__text {
+		font-size: $baseFontSize;
+		line-height: 22px;
+		font-weight: normal;
+		// color: $grey;
+		max-width: 436px;
+		text-align: center;
+		margin-top: 21px;
+	}
+}

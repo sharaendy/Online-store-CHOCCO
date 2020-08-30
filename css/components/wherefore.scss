@@ -1,0 +1,38 @@
+.wherefore {
+	display: flex;
+	flex-direction: column;
+	flex: 1;
+	height: 100vh;
+	min-height: 650px;
+	position: relative;
+	background: url("../../img/2_wherefore/design.png") left center no-repeat;
+	position: relative;
+		&::before {
+			content: url("../../img/2_wherefore/raspberry.png");
+			position: absolute;
+			left: 0px;
+			bottom: -125px;
+		}
+}
+
+// !Бэкап
+// .wherefore {
+// 	display: flex;
+// 	flex-direction: column;
+// 	flex: 1;
+// 	height: 100vh;
+// 	min-height: 650px;
+// 	position: relative;
+// 	// TODO  какая то хрень, пока не понимаю что. Что то с позиционированием. Разобраться.
+// 	// * возможно перенести в контейнер и абсолютно спозиционировать, иначе обрезается левый край
+// 	background: url("../../img/2_wherefore/design.png") left center no-repeat;
+// 	&__container {
+// 		position: relative;
+// 		&::before {
+// 			content: url("../../img/2_wherefore/raspberry.png");
+// 			position: absolute;
+// 			left: -80px;
+// 			bottom: -125px;
+// 		}
+// 	}
+// }

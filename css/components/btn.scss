@@ -1,0 +1,43 @@
+.btn {
+	width:155px;
+	height:60px;
+	font-weight: 800;
+	border-radius:100px;
+	border: none;
+	font-size:16px;
+	line-height: 18px;
+	text-align: center;
+	text-transform: uppercase;
+	padding: 22px 41px; 
+	&--white {
+		background-color: $white;
+		color: $green ;
+		&:hover {
+			color: $white;
+			background: $green;
+		}
+	}
+	&--green {
+		background-color: $green;
+		color: $white;
+		&:hover {
+			color: $green;
+			background: $white;
+		}
+	}
+	&--transp {
+		background-color: transparent;
+		color: #497870;
+		text-transform: none;
+		font-weight: normal;
+		&:hover {
+			color: #000000;
+		}
+	}
+	&-welcom {
+		margin-top:53px;
+	}
+	&-deliver {
+		margin-right:20px;
+	}
+}

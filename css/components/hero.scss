@@ -1,0 +1,26 @@
+.hero {
+	display: flex;
+	flex-direction: column;
+	&__title {
+		max-width: 353px;
+		margin-top: 84px;
+	}
+	&__title-h1 {
+		font-size: 48px;
+		line-height: 58px;
+		font-weight: bold;
+		text-transform: uppercase;
+	}
+	&__content {
+		font-size:21px;
+		max-width: 371px;
+		margin-top: 18px;
+	}
+	&__container{
+		display: flex;
+		flex-direction: column;;
+		justify-content: space-between;
+		height: 100%;
+		padding: 24px 0 50px 0;
+	}
+}

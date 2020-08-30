@@ -1,0 +1,77 @@
+.main-content {
+	display: flex;
+	&--wherefore {
+		justify-content: space-between;
+		margin-top: 49px;
+		margin-bottom: 100px;
+		flex: 1 1;
+		width: 97%;
+	}
+	&--review {
+		flex-direction: column;
+	}
+	&--deliver {
+		flex-direction: row;
+	}
+	
+	&__item {
+		display: flex;
+		flex-direction: column;
+		justify-content: flex-start;
+		align-items: center;
+		max-width: 300px;
+		position: relative;
+		&::before {
+			content:url("../../img/2_wherefore/itemSeparator.png");
+			position: absolute;
+			top: 50px;
+			right: 0px;
+			transform: translateX(50%);
+			}
+		&:last-child {
+			&::before {
+				display: none;
+			}
+		}
+	}
+	
+	&__pic-wrapper {
+		display: inline-block;
+		position: relative;
+		width: 128px;
+		height: 128px;
+		border-radius: 50%;
+		background-color: $bg-grey;
+		overflow: hidden;
+	}
+	
+	&__pic {
+		text-align: center;
+	}
+
+	&__img {
+		width: 75px;
+		height: 69px;
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+	}
+	
+	&__title {
+		font-weight: bold;
+		font-size: 27px;
+		line-height: 32px;
+		color: $dark;
+		margin-top: 14px;
+	}
+	&__text {
+		font-size: $baseFontSize;
+		// color: $grey;
+		line-height: 22px;
+		font-weight: 300px;
+		text-align: center;
+		max-width: 280px;
+		margin-top: 20px;
+	}
+}

@@ -1,0 +1,29 @@
+.welcom {
+	background: url("../../img/1_welcom/leafs.png") right bottom no-repeat;
+	background-color:$bg-blue;
+	font-size: $baseFontSize;
+	color: $white;
+	height: 69.6vh;
+	min-width: 650px;
+	position: relative;
+
+// Декор Слева: листочек
+	&::before {
+		position: absolute;
+		bottom: -40px;
+		// ? не пойму как этот декор должен себя вести. Разобраться.
+		left: 22.3%;
+		content: url("../../img/1_welcom/LeafSingle.png");
+	}
+
+// Декор Правая часть: шоколадки, листья, ягоды
+	&::after {
+		position: absolute;
+		bottom: -40px;
+		right: 2%;
+		// TODO Сделать масштаб 50%, чтобы при уменьшении контейнера декор уменьшался
+		// ? как? это не background
+		// background: right top / 50% auto no-repeat;
+		content: url("../../img/1_welcom/leafsMainDecor.png");
+	}
+}

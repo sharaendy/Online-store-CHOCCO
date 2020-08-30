@@ -1,0 +1,21 @@
+.menu { 
+	display: inline-flex;
+	align-items: center;
+	margin-right: 42px;
+	&__list {
+		display: flex;
+		vertical-align: middle;
+		justify-content: space-between;
+		min-width: 641px;
+	}
+	&__item {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		margin-right: 27px;
+		height: 30px;
+		&:last-child {
+			margin-right: 0px;
+		}
+	}
+}

@@ -1,0 +1,24 @@
+
+.deliver {
+	color: #365A49;
+	background: 
+	//листик зеленый справа
+	url(../../img/4_deliver/leaf.png) right 10px bottom 58px no-repeat,
+	//основной фон заливка
+	url(../../img/4_deliver/bgDeliver.jpg) 0 0/100% auto no-repeat; 
+	height: 69.9vh;
+	// декор Ягода слева внизу
+	&::after {
+		content: url(../../img/4_deliver/berry.png);
+		position: absolute;
+		left: 50px;
+		bottom: -1850px;
+	}
+	//декор Ежевика и листья справа вверху
+	&::before{
+		content: url(../../img/4_deliver/leafsAndBerry.png);
+		position: absolute;
+		right: 0;
+		bottom: -1130px;
+	}
+}
