@@ -1,38 +1,21 @@
 .wherefore {
-	display: flex;
 	flex-direction: column;
-	flex: 1;
-	height: 100vh;
-	min-height: 650px;
-	position: relative;
-	background: url("../../img/2_wherefore/design.png") left center no-repeat;
-	position: relative;
+	justify-content: center;
+	// Декор паттерн-лист слева
+	background-image: url("../../img/2_wherefore/design.png");
+	background-size: auto auto;
+	background-position: left center;
+	background-repeat: no-repeat;
 		&::before {
 			content: url("../../img/2_wherefore/raspberry.png");
 			position: absolute;
-			left: 0px;
-			bottom: -125px;
+			bottom: -11%;
+			left: 0;
+			// width: 100%;
+			// height: 100%;
+			// background-image: url("../../img/2_wherefore/raspberry.png");
+			// background-size: auto auto;
+			// background-position: left 0 bottom -10%;
+			// background-repeat: no-repeat;
 		}
 }
-
-// !Бэкап
-// .wherefore {
-// 	display: flex;
-// 	flex-direction: column;
-// 	flex: 1;
-// 	height: 100vh;
-// 	min-height: 650px;
-// 	position: relative;
-// 	// TODO  какая то хрень, пока не понимаю что. Что то с позиционированием. Разобраться.
-// 	// * возможно перенести в контейнер и абсолютно спозиционировать, иначе обрезается левый край
-// 	background: url("../../img/2_wherefore/design.png") left center no-repeat;
-// 	&__container {
-// 		position: relative;
-// 		&::before {
-// 			content: url("../../img/2_wherefore/raspberry.png");
-// 			position: absolute;
-// 			left: -80px;
-// 			bottom: -125px;
-// 		}
-// 	}
-// }

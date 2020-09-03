@@ -1,6 +1,6 @@
 .hero {
 	display: flex;
-	flex-direction: column;
+	// flex-direction: column;
 	&__title {
 		max-width: 353px;
 		margin-top: 84px;
@@ -16,11 +16,10 @@
 		max-width: 371px;
 		margin-top: 18px;
 	}
-	&__container{
-		display: flex;
-		flex-direction: column;;
-		justify-content: space-between;
-		height: 100%;
-		padding: 24px 0 50px 0;
+	&__image-wrapper {
+
+	}
+	&__img {
+		position: relative;
 	}
 }

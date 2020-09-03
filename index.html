@@ -16,9 +16,9 @@
 	<!-- Оболочка  -->
 	<div class="wrapper">
 		<!--! Секция 1 "Приветствие"-->
-		<section class="welcom">
+		<section class="section welcom">
 			<!-- Контейнер "Приветствие" -->
-			<div class="container hero__container">
+			<div class="container welcom__container">
 				<!-- Шапка -->
 				<header class="header">
 					<!-- Логотип -->
@@ -46,12 +46,17 @@
 
 				<!-- Секция с основной информацией -->
 				<div class="hero">
-					<h1 class="hero__title hero__title-h1">Натуральные шоколадные батончики</h1>
-					<div class="hero__content">
-						<p>Наши батончики идеально подходят для тех, кто следит за своим здоровьем</p>
+					<div class="hero__content-wrapper">
+						<h1 class="hero__title hero__title-h1">Натуральные шоколадные батончики</h1>
+						<div class="hero__content">
+							<p>Наши батончики идеально подходят для тех, кто следит за своим здоровьем</p>
+						</div>
+						<div class="btn-welcom">
+							<a href="#" class="btn btn--white">Заказать</a>
+						</div>
 					</div>
-					<div class="btn-welcom">
-						<a href="#" class="btn btn--white">Заказать</a>
+					<div class="hero__image-wrapper">
+						<img src="./img/1_welcom/chocolats.png" alt="Шоколадные батончики CHOCCO" class="hero__img">
 					</div>
 				</div>
 
@@ -82,9 +87,9 @@
 		</section>
 
 		<!--! Секция 2 "Почему CHOCCO"-->
-		<section class="wherefore">
+		<section class="section wherefore">
 			<!-- Контейнер "Почему" -->
-			<div class="container wherefore__container">
+			<div class="container">
 				<div class="topline topline--wherefore">
 					<h2 class="topline__title topline__title-h2">Почему CHOCCO?</h2>
 					<div class="topline__text">
@@ -142,9 +147,9 @@
 		</section>
 
 		<!--! Секция 3 "Отзывы"-->
-		<section class="reviews">
+		<section class="section reviews">
 			<!--Контейнер "Отзывы"-->
-			<div class="container reviews__container">
+			<div class="container">
 				<div class="topline topline--rewies">
 					<h2 class="topline__title topline__title-h2">Отзывы</h2>
 				</div>
@@ -196,8 +201,8 @@
 		</section>
 
 		<!--! Секция 4 "Доставка"-->
-		<section class="deliver">
-			<div class="container deliver__container">
+		<section class="section deliver">
+			<div class="container">
 				<div class="topline topline--deliver">
 					<!-- TODO Оптимизировать костыль (возможно inherite)-->
 					<h2 class="topline__title topline__title-h2 topline__title-h2-color">Закажите доставку</h2>

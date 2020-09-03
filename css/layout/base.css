@@ -65,3 +65,11 @@ footer {
 	width: 100%;
 }
 
+::before {
+	z-index: 10;
+}
+
+::after {
+	z-index: 10;
+}
+
