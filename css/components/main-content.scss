@@ -27,6 +27,9 @@
 			top: rem(50px);
 			right: rem(0px);
 			transform: translateX(50%);
+			@include tablets {
+				display: none;
+			}
 			}
 		&:last-child {
 			&::before {
