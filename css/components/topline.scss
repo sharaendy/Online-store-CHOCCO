@@ -6,16 +6,16 @@
 	&--wherefore {
 	}
 	&--rewies {
-		margin-bottom: 32px;
+		margin-bottom: rem(32px);
 	}
 	&--deliver {
-		margin-bottom: 60px;
+		margin-bottom: rem(60px);
 	}
 	&__title {
 		display: block;
 	}
 	&__title-h2 {
-		font-size: 48px;
+		font-size: rem(48px);
 		text-transform: uppercase;;
 		font-weight: bold;
 		color: $dark;
@@ -25,11 +25,11 @@
 	}
 	&__text {
 		font-size: $baseFontSize;
-		line-height: 22px;
+		line-height: rem(22px);
 		font-weight: normal;
 		// color: $grey;
-		max-width: 436px;
+		max-width: rem(436px);
 		text-align: center;
-		margin-top: 21px;
+		margin-top: rem(21px);
 	}
 }

@@ -4,14 +4,14 @@
 	//выключить поведение текста (выделение)
 	user-select: none;
 	&__title {
-		margin-right: 29px;
-		margin-left: 10px;
-		margin-bottom: 24px;
+		margin-right: rem(29px);
+		margin-left: rem(10px);
+		margin-bottom: rem(24px);
 	}
 	&--checkbox {
 		.radio__visible {
-			margin-right: 4px;
-			border-radius: 4px;
+			margin-right: rem(4px);
+			border-radius: rem(4px);
 			&::before {
 				content: "";
 				background: url(../../img/4_deliver/checked.png) center center no-repeat;
@@ -28,16 +28,16 @@
 		}
 	}
 	&__visible {
-		width: 24px;
-		height: 24px;
+		width: rem(24px);
+		height: rem(24px);
 		position: relative;
 		border-radius: 50%;
 		background: #ffffff;
 		&::before {
 			content: "";
 			display: none;
-			width: 13px;
-			height: 13px;
+			width: rem(13px);
+			height: rem(13px);
 			background: #2E4E3F;
 			border-radius: 50%;
 			position: absolute;

@@ -1,18 +1,63 @@
-//!Цвета
+// !Переменные
+//Цвета
 $white: #FFFFFF;
 $dark: #292929;
 $green:#497870; 
 $grey:#666666;
-	//!Фоновые цвета
+	//Фоновые цвета
 	$bg-blue: #61C4D9;
 	$bg-grey: #F2F5F4;
 	$bg-lightGrey: #F8FAF9;
 
-//!Шрифты
+//Шрифты
 $baseFontSize: 18px;
 
-//!Компоненты
+//Брэйкпоинты
+$tablets: 768px;
+$phones: 480px;
+
+
+
 
 //!Приоритеты
-//навигационное меню справа
+//Навигационное меню по страницам. Точки. Справа
 $z-fixed-menu: 100;
+
+
+
+
+//!Функции
+@function rem($px) {
+	@return $px / $baseFontSize + 0rem;
+}
+
+
+
+
+// !Примеси
+@mixin tablets {
+	@media screen and (max-width:$tablets) {
+		@content;
+	}
+}
+
+@mixin phones {
+	@media screen and (max-width:$phones) {
+		@content;
+	}
+}
+
+
+
+
+html {
+	font-size: $baseFontSize;
+
+	@include tablets {
+		font-size: $baseFontSize - 1px;
+	}
+
+	@include phones {
+		font-size: $baseFontSize - 2px;
+	}
+}

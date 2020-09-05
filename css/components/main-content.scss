@@ -2,8 +2,8 @@
 	display: flex;
 	&--wherefore {
 		justify-content: space-between;
-		margin-top: 49px;
-		margin-bottom: 100px;
+		margin-top: rem(49px);
+		margin-bottom: rem(100px);
 		flex: 1 1;
 		width: 97%;
 	}
@@ -19,13 +19,13 @@
 		flex-direction: column;
 		justify-content: flex-start;
 		align-items: center;
-		max-width: 300px;
+		max-width: rem(300px);
 		position: relative;
 		&::before {
 			content:url("../../img/2_wherefore/itemSeparator.png");
 			position: absolute;
-			top: 50px;
-			right: 0px;
+			top: rem(50px);
+			right: rem(0px);
 			transform: translateX(50%);
 			}
 		&:last-child {
@@ -38,8 +38,8 @@
 	&__pic-wrapper {
 		display: inline-block;
 		position: relative;
-		width: 128px;
-		height: 128px;
+		width: rem(128px);
+		height: rem(128px);
 		border-radius: 50%;
 		background-color: $bg-grey;
 		overflow: hidden;
@@ -50,8 +50,8 @@
 	}
 
 	&__img {
-		width: 75px;
-		height: 69px;
+		width: rem(75px);
+		height: rem(69px);
 		position: absolute;
 		top: 50%;
 		left: 50%;
@@ -60,17 +60,17 @@
 	
 	&__title {
 		font-weight: bold;
-		font-size: 27px;
-		line-height: 32px;
+		font-size: rem(27px);
+		line-height: rem(32px);
 		color: $dark;
-		margin-top: 14px;
+		margin-top: rem(14px);
 	}
 	&__text {
 		font-size: $baseFontSize;
-		line-height: 22px;
-		font-weight: 300px;
+		line-height: rem(22px);
+		font-weight: rem(300px);
 		text-align: center;
-		max-width: 280px;
-		margin-top: 20px;
+		max-width: rem(280px);
+		margin-top: rem(20px);
 	}
 }

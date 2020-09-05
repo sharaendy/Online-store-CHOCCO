@@ -8,7 +8,6 @@ body {
 }
 
 body {
-	font-size: 18px;
 	color:#666666;
 	font-family: "Alegreya Sans", "helvetica", "sans-serif";
 	position: relative;
@@ -28,7 +27,7 @@ a {
 }
 
 p {
-	margin: 0px;
+	margin: rem(0px);
 }
 
 ul {

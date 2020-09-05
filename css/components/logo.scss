@@ -1,8 +1,7 @@
 .logo {
 	overflow: hidden;
-	object-fit: fill;
 	display: flex;
-	width: 53px;
-	height: 38px;
-	margin-right: 40px;
+	min-width: rem(53px);
+	height: rem(38px);
+	margin-right: rem(40px);
 }

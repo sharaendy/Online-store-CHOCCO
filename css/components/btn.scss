@@ -1,14 +1,14 @@
 .btn {
-	width:155px;
-	height:60px;
+	width:rem(155px);
+	height:rem(60px);
 	font-weight: 800;
-	border-radius:100px;
+	border-radius:rem(100px);
 	border: none;
-	font-size:16px;
-	line-height: 18px;
+	font-size:rem(16px);
+	line-height: rem(18px);
 	text-align: center;
 	text-transform: uppercase;
-	padding: 22px 41px; 
+	padding: rem(22px) rem(41px); 
 	&--white {
 		background-color: $white;
 		color: $green ;
@@ -35,9 +35,12 @@
 		}
 	}
 	&-welcom {
-		margin-top:53px;
+		margin-top:rem(53px);
+		@include tablets {
+			padding: 0 40% 0 40%;
+		}
 	}
 	&-deliver {
-		margin-right:20px;
+		margin-right:rem(20px);
 	}
 }
