@@ -6,6 +6,12 @@
 	overflow: hidden;
 	position: relative;
 	max-width: rem(940px);
+	@include tablets {
+		flex-direction: column;
+		align-items: center;
+		margin-bottom: rem(50px);
+	}
+
 	&::before {
 		content: "";
 		display: block;
@@ -20,6 +26,12 @@
 	}
 	&__pic {
 		margin: rem(40px);
+		@include tablets {
+			width: 130px;
+			height: 130px;
+			margin: rem(56px) 0 rem(32px) 0;
+		}
+		
 	}
 	&__content {
 		display: flex;
@@ -27,6 +39,10 @@
 		flex-direction: column;
 		align-items: flex-start;
 		padding: rem(70px) rem(142px) rem(0px) rem(0px);
+		@include tablets {
+			align-items: center;
+			padding: rem(0px) rem(0px) rem(0px) rem(0px);
+		}
 	}
 	&__title {
 		font-weight: bold;
@@ -34,6 +50,9 @@
 		line-height: rem(32px);
 		color: $dark;
 		margin-bottom: rem(12px);
+		@include tablets {
+			margin-bottom: rem(0px);
+		}
 	}
 	&__text {
 		max-width: rem(435px);
@@ -42,6 +61,12 @@
 		font-weight: rem(300px);
 		text-align: left;
 		margin-bottom: rem(25px);
+		@include tablets {
+			text-align: center;
+			max-width: 93%;
+			margin-bottom: rem(0px);
+		}
+		
 	}
 	&__author {
 		max-width: rem(463px);
@@ -49,11 +74,12 @@
 		line-height: rem(24px);
 		font-weight: 500;
 		text-align: left;
+		padding-bottom: rem(43px);
 	}
 	&-selector {
 		display: flex;
 		justify-content: center;
-		width: 97%;
+		width: 100%;
 		margin-bottom: rem(70px);
 		&__item {
 			margin-right: rem(6px);
@@ -65,6 +91,10 @@
 			position: relative;
 			&--active {
 				border: rem(4px) solid $green;
+			}
+			@include tablets {
+				width: rem(73px);
+				height: rem(73px);
 			}
 		}
 		&__link {
