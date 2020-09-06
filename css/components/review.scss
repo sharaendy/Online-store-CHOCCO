@@ -75,6 +75,9 @@
 		font-weight: 500;
 		text-align: left;
 		padding-bottom: rem(43px);
+		@include tablets {
+			margin-top: 3%;
+		}
 	}
 	&-selector {
 		display: flex;
