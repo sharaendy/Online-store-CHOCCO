@@ -1,0 +1,27 @@
+.footer {
+	display: flex;
+	align-items: center;
+	min-height: rem(93px);
+	&__col-left {
+		display: flex;
+		flex-direction: column;
+		@include phones {
+			align-items: center;
+			margin-bottom: rem(19px);
+			margin-top: rem(20px);
+		}
+	}
+	&__col-right {
+		display: flex;
+	}
+	&__adress {
+		font-weight: normal;
+		font-size: 21px;
+		line-height: 24px;
+		@include phones {
+			align-items: center;
+			margin-bottom: rem(14px);
+		}
+	}
+
+}

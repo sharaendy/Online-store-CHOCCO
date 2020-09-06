@@ -10,9 +10,23 @@
 		@include tablets {
 			display: none;
 		}
-
 		&::before {
 			content: url(/img/1_welcom/header/phone/phone.png);
+			margin-right: rem(6px);
+			width: rem(12px);
+			height: rem(12px);
+			flex-shrink: 0;
+		}
+	}
+
+	&__number-footer {
+		font-size: rem(22px);
+		display: flex;
+		flex-wrap: nowrap;
+		color: #497870;
+
+		&::before {
+			content: url(/img/6_footer/phoneIcon.svg);
 			margin-right: rem(6px);
 			width: rem(12px);
 			height: rem(12px);
