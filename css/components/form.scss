@@ -5,6 +5,10 @@
 		flex-direction: column;
 		padding: 0 19%;
 	}
+	@include tablets {
+		flex-direction: column;
+		padding: 0;
+	}
 
 	&__column {
 		flex: 1;
@@ -68,5 +72,8 @@
 		display: flex;
 		flex-wrap: wrap;
 		margin-bottom: rem(11px);
+		@include phones {
+			justify-content: center;
+		}
 	}
 }
