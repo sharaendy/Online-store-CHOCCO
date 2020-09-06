@@ -6,6 +6,10 @@
 		margin-bottom: rem(100px);
 		flex: 1 1;
 		width: 97%;
+		@include phones {
+			margin-bottom: 0;
+			flex-direction: column;
+		}
 	}
 	&--review {
 		flex-direction: column;
@@ -21,6 +25,11 @@
 		align-items: center;
 		max-width: rem(300px);
 		position: relative;
+		@include phones {
+			flex-direction: row;
+			max-width: 100%;
+			margin-bottom: rem(31px);
+		}
 		&::before {
 			content:url("../../img/2_wherefore/itemSeparator.png");
 			position: absolute;
@@ -67,6 +76,11 @@
 		line-height: rem(32px);
 		color: $dark;
 		margin-top: rem(14px);
+		text-align: center;
+		@include phones {
+			text-align: left;
+			margin-top: 0;
+		}
 	}
 	&__text {
 		font-size: $baseFontSize;
@@ -75,5 +89,19 @@
 		text-align: center;
 		max-width: rem(280px);
 		margin-top: rem(20px);
+		@include phones {
+			text-align: left;
+			margin-top: 0;
+			max-width: 95%;
+			margin-top: rem(14px);
+		}
 	}
+	&__wrapper-phone {
+		@include phones {
+		display: flex;
+		flex-direction: column;
+		margin-left: 5%;
+		justify-content: center;
+	}
+}
 }

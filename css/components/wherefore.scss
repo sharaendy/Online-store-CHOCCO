@@ -9,10 +9,16 @@
 	@include tablets {
 		background-position: left top 15%;
 	}
+	@include phones {
+		background-image: none;
+	}
 		&::before {
 			content: url("../../img/2_wherefore/raspberry.png");
 			position: absolute;
 			bottom: -11%;
 			left: 0;
+			@include phones {
+				display: none;
+			}
 		}
 }
