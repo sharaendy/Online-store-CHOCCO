@@ -10,6 +10,10 @@
 	@include tablets {
 		background-position: right top 35%;
 	}
+	@include phones {
+		background-position: right bottom 95%;
+    background-size: 69% 60%;
+	}
 	&__container{
 		display: flex;
 		flex-direction: column;;

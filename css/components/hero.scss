@@ -21,12 +21,22 @@
 			margin-top: rem(14px);
 			// margin-top: rem(82px);
 		}
+		@include phones {
+			max-width: 98%;
+			text-align: center;
+			margin-top: rem(14px);
+			// margin-top: rem(82px);
+		}
 	}
 	&__title-h1 {
 		font-size: rem(48px);
 		line-height: rem(58px);
 		font-weight: bold;
 		text-transform: uppercase;
+		@include phones {
+			line-height: rem(52px);
+		}
+		
 	}
 	&__content {
 		font-size:rem(21px);
@@ -37,6 +47,9 @@
 			padding: 0 27% 0 27%;
 			text-align: center;
 			// margin-top: rem(82px);
+		}
+		@include phones {
+			padding: 0 16% 0 16%;
 		}
 	}
 	&__img {
@@ -52,6 +65,11 @@
 			display: inline-block;
 			text-align: center;
 			max-width: 50%;
+		}
+		@include phones {
+			display: inline-block;
+			text-align: center;
+			max-width: 70%;
 		}
 	}
 }
