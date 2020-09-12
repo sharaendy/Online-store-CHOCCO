@@ -31,6 +31,10 @@
 			width: rem(135px);
 			height: rem(112px);
 			z-index: 11;
+			@include tablets {
+				bottom: 0;
+				right: 0;
+			}
 		}
 	}
 }
