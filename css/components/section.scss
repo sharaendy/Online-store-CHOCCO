@@ -2,5 +2,35 @@
 	position: relative;
 	display: flex;
 	height: 100vh;
-	// min-width: rem(650px);
+	
+	&--slider {
+	display: flex;
+	flex: 1;
+	background-color: #F8FAF9;
+	// Декор справа Паттер Пальма
+		&::after {
+			content: '';
+			background-image: url("../../img/2-2_slider/decor_pattern.png");
+			background-size: contain;
+			background-repeat: no-repeat;
+			position: absolute;
+			bottom: -20%;
+			right: 0;
+			width: rem(196px);
+			height: rem(453px);
+		}
+// Декор справа ягоды
+		&::before {
+			content: '';
+			background-image: url("../../img/2-2_slider/decor_berry.png");
+			background-size: contain;
+			background-repeat: no-repeat;
+			position: absolute;
+			bottom: -8%;
+			right: 0;
+			width: rem(135px);
+			height: rem(112px);
+			z-index: 11;
+		}
+	}
 }

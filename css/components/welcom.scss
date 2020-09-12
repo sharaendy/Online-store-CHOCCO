@@ -24,10 +24,15 @@
 
 // Декор Слева: листочек
 	&::before {
-		content: url("../../img/1_welcom/LeafSingle.png");
+		content: '';
+		background-image: url("../../img/1_welcom/LeafSingle.png");
+		background-size: contain;
 		position: absolute;
 		bottom: -6%;
 		left: 10%;
+		width: rem(59px);
+		height: rem(112px);
+
 		@include tablets {
 			display: none;
 		}
@@ -35,10 +40,14 @@
 
 // Декор Правая часть: листья, ягоды
 	&::after {
-		content:url(../../img/1_welcom/leafsMainDecor.png);
+		content: '';
+		background-image: url(../../img/1_welcom/leafsMainDecor.png);
+		background-size: contain;
 		position: absolute;
 		bottom: -6%;
 		right: 0;
+		width: rem(465px);
+		height: rem(590px);
 		@include tablets {
 			display: none;
 		}

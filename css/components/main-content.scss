@@ -11,6 +11,10 @@
 			flex-direction: column;
 		}
 	}
+	&--slider {
+		display: flex;
+		flex: 1;
+	}
 	&--review {
 		flex-direction: column;
 	}
@@ -25,7 +29,12 @@
 			align-items: center;
 		}
 	}
-	
+	&__col {
+		display: flex;
+		align-items: center;
+		height: 100vh;
+	}
+
 	&__item {
 		display: flex;
 		flex-direction: column;

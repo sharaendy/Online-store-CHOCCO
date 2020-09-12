@@ -13,10 +13,14 @@
 		background-image: none;
 	}
 		&::before {
-			content: url("../../img/2_wherefore/raspberry.png");
+			content: '';
+			background-image: url("../../img/2_wherefore/raspberry.png");
+			background-size: contain;
 			position: absolute;
 			bottom: -11%;
 			left: 0;
+			width: rem(135px);
+			height: rem(270px);
 			@include phones {
 				display: none;
 			}
