@@ -2,13 +2,14 @@
 	display: flex;
 	background: url(../../img/3_reviews/leaf.png) right top rem(20px) no-repeat;
 	background-color: #F8FAF9;
-	margin-bottom: rem(15px);
+	padding: rem(42px) rem(142px) rem(42px) rem(42px);
 	overflow: hidden;
 	position: relative;
 	max-width: rem(940px);
 	@include tablets {
 		flex-direction: column;
 		align-items: center;
+		padding: rem(42px) rem(42px) rem(42px) rem(42px);
 		margin-bottom: rem(50px);
 	}
 
@@ -25,7 +26,7 @@
 		top: rem(-65px);
 	}
 	&__pic {
-		margin: rem(40px);
+		margin-right: rem(40px);
 		@include tablets {
 			width: 130px;
 			height: 130px;
@@ -38,7 +39,7 @@
 		flex: 1;
 		flex-direction: column;
 		align-items: flex-start;
-		padding: rem(70px) rem(142px) rem(0px) rem(0px);
+		padding: rem(32px) rem(0px) rem(0px) rem(0px);
 		@include tablets {
 			align-items: center;
 			padding: rem(0px) rem(0px) rem(0px) rem(0px);
@@ -74,7 +75,6 @@
 		line-height: rem(24px);
 		font-weight: 500;
 		text-align: left;
-		padding-bottom: rem(43px);
 		@include tablets {
 			margin-top: 3%;
 		}
@@ -83,6 +83,7 @@
 		display: flex;
 		justify-content: center;
 		width: 100%;
+		margin-top: rem(15px);
 		margin-bottom: rem(70px);
 		&__item {
 			margin-right: rem(6px);

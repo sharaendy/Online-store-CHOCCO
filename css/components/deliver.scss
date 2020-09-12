@@ -1,6 +1,7 @@
 
 .deliver {
 	color: #365A49;
+	position: relative;
 	align-items: center;
 	background-image: url(../../img/4_deliver/leaf.png), url(../../img/4_deliver/bgDeliver.jpg);
 	background-repeat: no-repeat;
@@ -13,25 +14,27 @@
 		background-size: cover;
 	}
 	&::after {
-		content: url(../../img/4_deliver/berry.png);
+		content: '';
+		background-image: url(../../img/4_deliver/berry.png);
+		background-size: contain;
 		position: absolute;
     left: 5%;
 		top: 78%;
+		width: rem(47px);
+		height: rem(47px);
 		@include tablets {
 			display: none;
 		}
 	}
 	//декор Ежевика и листья справа вверху
 	&::before{
-		content: url(../../img/4_deliver/leafsAndBerry.png);
+		content: '';
+		background-image: url(../../img/4_deliver/leafsAndBerry.png);
+		background-size: contain;
 		position: absolute;
 		right: 0;
 		top: -17%;
+		width: rem(196px);
+		height: rem(264px);
 	}
 }
-
-
-	// //листик зеленый справа
-	// url(../../img/4_deliver/leaf.png) right rem(10px) bottom rem(58px) no-repeat,
-	// //основной фон заливка
-	// url(../../img/4_deliver/bgDeliver.jpg) 0 0/100% auto no-repeat; 

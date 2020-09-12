@@ -13,8 +13,9 @@
 	&__img {
 		width: rem(20px);
 		height: rem(20px);
+		fill: #B3B3B3;
 		&:hover {
-			fill: red;
+			fill: #292929;
 		}
 	}
 }

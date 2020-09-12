@@ -6,16 +6,24 @@
 	align-items: center;
 		//декор слева внизу Ягоды
 	&::after {
-		content: url(../../img/3_reviews/berries1.png);
+		content: '';
 		position: absolute;
+		background-image: url(../../img/3_reviews/berries1.png);
+		background-size: contain;
+		width: rem(135px);
+		height: rem(193px);
     bottom: -8%;
     left: 0;
 	}
 	//декор слева внизу Лист
 	&::before {
-		content: url(../../img/3_reviews/pattern.png);
+		content: '';
+		background-image: url(../../img/3_reviews/pattern.png);
+		background-size: contain;
 		position: absolute;
     bottom: -15%;
-    left: 0;
+		left: 0;
+		width: rem(102px);
+		height: rem(321px);
 	}
 }
