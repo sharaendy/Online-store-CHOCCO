@@ -367,11 +367,19 @@
 							</label>
 						</div>
 						<div class="form__buttons">
-							<input type="submit" value="Заказать" class="btn btn--green btn-deliver">
+							<input type="submit" value="Заказать" class="btn btn--green btn-deliver" id="openButtonModal">
 							<input type="reset" value="Очистить" class="btn btn--transp btn-deliver">
 						</div>
 					</div>
 				</form>
+			</div>
+
+			<!-- Модальное окно -->
+			<div class="overlay">
+				<div class="modalMenu">
+					<div class="modalMenu__text">Сообщение отправлено</div>
+					<a href="#" class="btn btn--green" id="closeButtonModal">Закрыть</a>
+				</div>
 			</div>
 		</section>
 
@@ -467,6 +475,29 @@
 		</ul>
 	</nav>
 
+	<script>
+		var openModal = document.getElementById('openButtonModal');
+		var closeModal = document.getElementById('closeButtonModal');
+		var overlay = document.getElementsByClassName('overlay');
+		openModal.
+			// Открыть модальное окно
+			openModal.addEventListener = function () {
+				overlay.style.display = 'flex';
+			};
+
+		// Закрытие окна кнопкой
+		closeModal.addEventListener = function () {
+			overlay.style.display = "none";
+		};
+
+		// Закрытие окна оверлей
+		overlay.addEventListener = function (event) {
+			if (event.targer == overlay) {
+				overlay.style.display = "none";
+			}
+		};
+		console.log(overlay);
+	</script>
 </body>
 
 </html>

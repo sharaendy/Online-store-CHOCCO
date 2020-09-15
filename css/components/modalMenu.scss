@@ -1,0 +1,17 @@
+.modalMenu {
+	width: rem(309px);
+	height: rem(176px);
+	background: #ffffff;
+	position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	&__text {
+		font-weight: 500;
+		font-size: 18px;
+		line-height: 24px;
+		color: #000000;
+		margin-bottom: rem(18px);
+	}
+}
