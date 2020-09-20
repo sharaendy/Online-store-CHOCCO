@@ -1,12 +1,13 @@
 .modalMenu {
+	display: flex;
+	position: relative;
 	width: rem(309px);
 	height: rem(176px);
 	background: #ffffff;
-	position: relative;
-	display: flex;
 	justify-content: center;
 	align-items: center;
 	flex-direction: column;
+	z-index: $z-modal-menu;
 	&__text {
 		font-weight: 500;
 		font-size: 18px;

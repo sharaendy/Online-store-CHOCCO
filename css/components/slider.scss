@@ -32,6 +32,10 @@
 	}
 	&__menu {
 		margin-bottom: rem(23px);
+		width: rem(92px);
+		&:hover .dropdownMenu {
+			display: block;
+		}
 		@include tablets {
 			display: none;
 		}

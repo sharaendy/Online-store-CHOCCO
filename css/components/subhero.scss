@@ -32,5 +32,8 @@
 		max-width: rem(75px);
 		font-size: rem(16px);
 		font-weight: normal;
+		&:last-child {
+			min-width: rem(66px);
+		}
 	}
 }

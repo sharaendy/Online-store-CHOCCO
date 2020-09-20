@@ -37,11 +37,37 @@
 							<li class="menu__item"><a href="#" class="menu__link">Контакты</a></li>
 						</ul>
 					</nav>
+
+					<!-- Меню навигации Гамбургер -->
+					<div class="hamburger-overlay">
+						<!-- кнопка закрыть -->
+						<button class="humburger-button" id="closeButtonHamburger" aria-label="кнопка закрыть"></button>
+						<!-- меню -->
+						<nav class="hamburger-menu">
+							<ul class="hamburger-menu__list">
+								<li class="hamburger-menu__item">
+									<a href="#" class="hamburger-menu__link">О нас</a></li>
+								<li class="hamburger-menu__item">
+									<a href="#" class="hamburger-menu__link">Батончики</a></li>
+								<li class="hamburger-menu__item">
+									<a href="#" class="hamburger-menu__link">Команда</a></li>
+								<li class="hamburger-menu__item">
+									<a href="#" class="hamburger-menu__link">Меню</a></li>
+								<li class="hamburger-menu__item">
+									<a href="#" class="hamburger-menu__link">Отзывы</a></li>
+								<li class="hamburger-menu__item">
+									<a href="#" class="hamburger-menu__link">Как мы работаем</a></li>
+								<li class="hamburger-menu__item">
+									<a href="#" class="hamburger-menu__link">Контакты</a></li>
+							</ul>
+						</nav>
+					</div>
+
 					<!-- Телефон -->
 					<address class="phone ">
 						<a href="tel:+78009039090" class="phone__number phone__number-header">8 800 903 90 90</a>
 					</address>
-					<a href="" class="hamburger">
+					<a href="" class="hamburger" id="openButtonHamburger">
 						<span class="hamburger__plank"></span>
 						<span class="hamburger__plank"></span>
 						<span class="hamburger__plank"></span>
@@ -191,7 +217,66 @@
 
 							<div class="slider__menu">
 								<div class="composition">
-									<img src="./img/2-2_slider/components.png" alt="Иконка состав батончика" class="composition__img">
+									<img class="composition__img" src="./img/2-2_slider/components.svg" alt="иконка состав батончика">
+									<div class="composition__title">Состав</div>
+								</div>
+								<div class="dropdownMenu">
+									<ul class="dropdownMenu__list">
+										<!-- Компонент 1 -->
+										<li class="dropdownMenu__item">
+											<img src="./img/2-2_slider/components/comp_1.svg" alt="иконка компонент состава виноград"
+												class="dropdownMenu__img">
+											<div class="dropdownMenu__text">
+												<div class="dropdownMenu__name">Виноград</div>
+												<div class="dropdownMenu__weight">25г</div>
+											</div>
+										</li>
+										<!-- Компонент 2 -->
+										<li class="dropdownMenu__item">
+											<img src="./img/2-2_slider/components/comp_2.svg" alt="иконка компонент состава грецкий орех"
+												class="dropdownMenu__img">
+											<div class="dropdownMenu__text">
+												<div class="dropdownMenu__name">Грецкий орех</div>
+												<div class="dropdownMenu__weight">32г</div>
+											</div>
+										</li>
+										<!-- Компонент 3 -->
+										<li class="dropdownMenu__item">
+											<img src="./img/2-2_slider/components/comp_3.svg" alt="иконка компонент состава Кунжутовое семя"
+												class="dropdownMenu__img">
+											<div class="dropdownMenu__text">
+												<div class="dropdownMenu__name">Кунжутовое семя</div>
+												<div class="dropdownMenu__weight">20г</div>
+											</div>
+										</li>
+										<!-- Компонент 4 -->
+										<li class="dropdownMenu__item">
+											<img src="./img/2-2_slider/components/comp_4.svg" alt="иконка компонент состава Сухое молоко"
+												class="dropdownMenu__img">
+											<div class="dropdownMenu__text">
+												<div class="dropdownMenu__name">Сухое молоко</div>
+												<div class="dropdownMenu__weight">10г</div>
+											</div>
+										</li>
+										<!-- Компонент 5 -->
+										<li class="dropdownMenu__item">
+											<img src="./img/2-2_slider/components/comp_5.svg" alt="иконка компонент состава Зам. сахара"
+												class="dropdownMenu__img">
+											<div class="dropdownMenu__text">
+												<div class="dropdownMenu__name">Зам. сахара</div>
+												<div class="dropdownMenu__weight">4г</div>
+											</div>
+										</li>
+										<!-- Компонент 6 -->
+										<li class="dropdownMenu__item">
+											<img src="./img/2-2_slider/components/comp_6.svg" alt="иконка компонент состава Какао бобы"
+												class="dropdownMenu__img">
+											<div class="dropdownMenu__text">
+												<div class="dropdownMenu__name">Какао бобы</div>
+												<div class="dropdownMenu__weight">4г</div>
+											</div>
+										</li>
+									</ul>
 								</div>
 							</div>
 
@@ -475,29 +560,10 @@
 		</ul>
 	</nav>
 
-	<script>
-		var openModal = document.getElementById('openButtonModal');
-		var closeModal = document.getElementById('closeButtonModal');
-		var overlay = document.getElementsByClassName('overlay');
-		openModal.
-			// Открыть модальное окно
-			openModal.addEventListener = function () {
-				overlay.style.display = 'flex';
-			};
-
-		// Закрытие окна кнопкой
-		closeModal.addEventListener = function () {
-			overlay.style.display = "none";
-		};
-
-		// Закрытие окна оверлей
-		overlay.addEventListener = function (event) {
-			if (event.targer == overlay) {
-				overlay.style.display = "none";
-			}
-		};
-		console.log(overlay);
-	</script>
+	<!-- !Гамбурген Оверлэй меню -->
+	<script src="./js/hamburgerModal.js"></script>
+	<!-- !Модальное меню об успешном заказе продукции -->
+	<script src="./js/deliveryModal.js"></script>
 </body>
 
 </html>
