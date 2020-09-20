@@ -1,14 +1,11 @@
 .review {
 	min-height: rem(280px);
-
 	&__item, .active {
 		opacity: 1;
-		position: static;
 	}
 	&__item {
 	display: flex;
 	position: absolute;
-	transition: .3s;
 	top: 0;
 	right: 0;
 	bottom: 0;
@@ -37,7 +34,6 @@
 		left: 50%;
 		transform: translateX(-50%);
 		top: rem(-65px);
-		margin-top: 20%;
 	}}
 	&__pic {
 		margin-right: rem(40px);
@@ -93,16 +89,12 @@
 			margin-top: 3%;
 		}
 	}
-
 	&-selector {
 		display: flex;
 		justify-content: center;
 		width: 100%;
-		margin-top: rem(25px);
-		margin-bottom: rem(60px);
-		&__item, .active {
-			border: rem(4px) solid $green;
-		}
+		margin-top: rem(15px);
+		margin-bottom: rem(70px);
 		&__item {
 			margin-right: rem(6px);
 			width: rem(80px);
@@ -111,11 +103,13 @@
 			border-radius: 50%;
 			overflow: hidden;
 			position: relative;
-
-		@include tablets {
-			width: rem(73px);
-			height: rem(73px);
-		}
+			&--active {
+				border: rem(4px) solid $green;
+			}
+			@include tablets {
+				width: rem(73px);
+				height: rem(73px);
+			}
 		}
 		&__link {
 			position: absolute;
