@@ -1,0 +1,32 @@
+.reviews {
+  background-image: url(../../img/3_reviews/berries2.png);
+  background-size: auto auto;
+  background-position: right rem(21px) top rem(38px);
+  background-repeat: no-repeat;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.reviews::after {
+  content: '';
+  position: absolute;
+  background-image: url(../../img/3_reviews/berries1.png);
+  background-size: contain;
+  width: rem(135px);
+  height: rem(193px);
+  bottom: -8%;
+  left: 0;
+}
+
+.reviews::before {
+  content: '';
+  background-image: url(../../img/3_reviews/pattern.png);
+  background-size: contain;
+  position: absolute;
+  bottom: -15%;
+  left: 0;
+  width: rem(102px);
+  height: rem(321px);
+}
+/*# sourceMappingURL=reviews.css.map */

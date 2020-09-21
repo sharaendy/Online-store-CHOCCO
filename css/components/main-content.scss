@@ -12,12 +12,21 @@
 		}
 	}
 	&--slider {
-		display: flex;
-		flex: 1;
+		margin-top: 20%;
+		// display: flex;
 	}
 	&--review {
 		flex-direction: column;
 		margin-top: 20%;
+	}
+	&--team {
+		@include tablets {
+			justify-content: center;
+			padding: 0% 10%;
+			align-items: center;
+			height: 80%;
+			flex: 1;
+		}
 	}
 	&--deliver {
 		flex-direction: row;

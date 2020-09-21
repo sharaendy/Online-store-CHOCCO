@@ -1,0 +1,9 @@
+.map {
+  min-height: 100vh;
+  background-image: url("../../img/5_map/map.png");
+  background-position: 100% 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: 0 auto;
+}
+/*# sourceMappingURL=map.css.map */

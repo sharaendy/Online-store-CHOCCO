@@ -1,0 +1,10 @@
+.logo {
+  overflow: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  min-width: rem(53px);
+  height: rem(38px);
+  margin-right: rem(40px);
+}
+/*# sourceMappingURL=logo.css.map */
