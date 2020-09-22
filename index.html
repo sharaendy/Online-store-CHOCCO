@@ -10,6 +10,7 @@
 	<link rel="stylesheet" href="./css/components/main.css">
 	<link rel="stylesheet" href="./css/layout/font.css">
 	<link rel="stylesheet" href="./css/layout/jquery.bxslider.css">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
 	<!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css"> -->
 </head>
 
@@ -649,43 +650,44 @@
 					<h2 class="topline__title topline__title-h2 topline__title-h2-color">Закажите доставку</h2>
 				</div>
 				<form action="" class="form">
+					<input type="hidden" name="to" value="somewhere@mail.com">
 					<!-- Левая колонка -->
 					<div class="form__column">
 						<!-- 1-ая строка (левая колонка) -->
 						<div class="form__row">
 							<label class="form__label">
 								<div class="form__title">Имя</div>
-								<input type="text" class="form__input">
+								<input type="text" class="form__input" name="name">
 							</label>
 							<label class="form__label">
 								<div class="form__title">Телефон</div>
-								<input type="text" placeholder="89022348912" class="form__input">
+								<input type="text" placeholder="89022348912" class="form__input" name="phone">
 							</label>
 						</div>
 						<!-- 2-ая строка (левая колонка) -->
 						<div class="form__row">
 							<label class="form__label">
 								<div class="form__title">Улица</div>
-								<input type="text" class="form__input">
+								<input type="text" class="form__input" name="street">
 							</label>
 						</div>
 						<!-- 3-ая строка (левая колонка) -->
 						<div class="form__row">
 							<label class="form__label">
 								<div class="form__title">Дом</div>
-								<input type="text" class="form__input">
+								<input type="text" class="form__input" name="home">
 							</label>
 							<label class="form__label">
 								<div class="form__title">Корпус</div>
-								<input type="text" class="form__input">
+								<input type="text" class="form__input" name="part">
 							</label>
 							<label class="form__label">
 								<div class="form__title">Квартира</div>
-								<input type="text" class="form__input">
+								<input type="text" class="form__input" name="apart">
 							</label>
 							<label class="form__label">
 								<div class="form__title">Этаж</div>
-								<input type="text" class="form__input">
+								<input type="text" class="form__input" name="floor">
 							</label>
 						</div>
 					</div>
@@ -729,7 +731,7 @@
 			</div>
 
 			<!-- Модальное окно -->
-			<div class="overlay">
+			<div class="overlay" id="deliveryOverlay">
 				<div class="modalMenu">
 					<div class="modalMenu__text">Сообщение отправлено</div>
 					<a href="#" class="btn btn--green" id="closeButtonModal">Закрыть</a>
@@ -830,6 +832,7 @@
 	</nav>
 
 	<script src="./js/jquery-3.5.1.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
 
 	<!-- !Модальное меню гамбурген -->
 	<script src="./js/hamburgerModal.js"></script>
@@ -844,7 +847,8 @@
 	<script src="./js/slider.js"></script>
 
 	<!-- !Модальное меню о заказе продукции -->
-	<script src="./js/deliveryModal.js"></script>
+	<script src="./js/deliveryModal_fancybox.js"></script>
+	<!-- <script src="./js/deliveryModal.js"></script> -->
 
 	<!-- !Отзывы переключатель -->
 	<script src="./js/reviews.js"></script>
