@@ -42,6 +42,7 @@
 		color: #151515;
 	}
 	&__menu {
+		position: relative;
 		margin-bottom: rem(23px);
 		width: rem(92px);
 		&:hover .dropdownMenu {
@@ -88,27 +89,49 @@
 		text-transform: uppercase;
 		margin-right: rem(30px);
 	}
-	&-control__arrow-prew {	
+	&-control__arrow {	
 		display: block;
 		width: rem(14px);
 		height: rem(27px);
-		background-image: url("./../../img/2-2_slider/arrow_left.png");
+		background-image: url("./../../img/2-2_slider/arrow.svg");
 		background-size: contain;
 		background-repeat: no-repeat;
 		position: absolute;
 		top: 45.9%;
+		z-index: 1;
 	}
-
-	&-control__arrow-next {
-		display: block;
-		width: rem(14px);
-		height: rem(27px);
-		background-image: url("./../../img/2-2_slider/arrow_right.png");
-		background-size: contain;
-		background-repeat: no-repeat;
-		position: absolute;
-		top: 45.9%;
-    right: 8%;
+	&-control--dir--prew {
+		//не удалять. На этом классе js слайдера
 	}
+	&-control--dir--next {
+		transform: rotate(180deg);
+		right: 8%;
+	}
+	
 }
+		// &-control__arrow-prew {	
+		// 	display: block;
+		// 	width: rem(14px);
+		// 	height: rem(27px);
+		// 	background-image: url("./../../img/2-2_slider/arrow.svg");
+		// 	background-size: contain;
+		// 	background-repeat: no-repeat;
+		// 	position: absolute;
+		// 	top: 45.9%;
+		// 	z-index: 1;
+		// 	transform: rotate(-180deg);
+		// }
+	
+		// &-control__arrow-next {
+		// 	display: block;
+		// 	width: rem(14px);
+		// 	height: rem(27px);
+		// 	background-image: url("./../../img/2-2_slider/arrow.svg");
+		// 	background-size: contain;
+		// 	background-repeat: no-repeat;
+		// 	position: absolute;
+		// 	top: 45.9%;
+		// 	right: 8%;
+		// 	z-index: 1;
+		// }
 

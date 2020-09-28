@@ -3,17 +3,18 @@
 
 	&__item, .active {
 		opacity: 1;
-		position: static;
+		display: flex;
+		// position: static;
 	}
 	&__item {
-	display: flex;
-	position: absolute;
-	transition: .3s;
-	top: 0;
-	right: 0;
-	bottom: 0;
-	left: 0;
-	opacity: 0;
+	display: none;
+	// position: absolute;
+	// transition: opacity .3s;
+	// top: 0;
+	// right: 0;
+	// bottom: 0;
+	// left: 0;
+	// opacity: 0;
 	background: url(../../img/3_reviews/leaf.png) right top rem(20px) no-repeat;
 	background-color: #F8FAF9;
 	padding: rem(42px) rem(142px) rem(42px) rem(42px);

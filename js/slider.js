@@ -10,12 +10,28 @@ const slider = $(".slider").bxSlider({
 	controls: false
 });
 
-$(".slider-control__arrow-prew").click(e => {
+$(".slider-control--dir--prew").click(e => {
 	e.preventDefault();
 	slider.goToPrevSlide();
 });
 
-$(".slider-control__arrow-next").click(e => {
+$(".slider-control--dir--next").click(e => {
 	e.preventDefault();
 	slider.goToNextSlide();
 });
+
+
+// const slider = $(".slider").bxSlider({
+// 	pager: false,
+// 	controls: false
+// });
+
+// $(".slider-control__arrow-prew").click(e => {
+// 	e.preventDefault();
+// 	slider.goToPrevSlide();
+// });
+
+// $(".slider-control__arrow-next").click(e => {
+// 	e.preventDefault();
+// 	slider.goToNextSlide();
+// });
