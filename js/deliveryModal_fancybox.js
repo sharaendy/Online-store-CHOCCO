@@ -1,3 +1,16 @@
+const validateFields = (form, fieldsArray) => {
+	fieldsArray.forEach(field => {
+		field.removeClass("input-error");
+		if (field.val().trim() === "") {
+			field.addClass("input-error")
+		}
+	});
+
+	const errorFields = form.find(".input-error");
+
+	return errorFields.length === 0;
+};
+
 $('.form').submit(e => {
 	e.preventDefault();
 
@@ -7,31 +20,46 @@ $('.form').submit(e => {
 	const comment = form.find("[name='comment']");
 	const to = form.find("[name='to']");
 
-	[name, phone, comment, to].forEach(field => {
-		if (field.val() === "") {
-			field.addClass("input-error")
-		}
-	});
+	const modal = $("#deliveryOverlay");
+	const content = modal.find(".modalMenu__text");
 
-	$.ajax({
-		url: "https://webdev-api.loftschool.com/sendmail",
-		method: "post",
-		data: {
-			name: name.val(),
-			phone: phone.val(),
-			comment: comment.val(),
-			to: to.val()
-		}
-	});
+	content.removeClass("error-modal");
 
-	$.fancybox.open({
-		src: "#deliveryOverlay",
-		type: "inline"
-	});
+	const isValid = validateFields(form, [name, phone, comment, to]);
+
+	if (isValid) {
+		$.ajax({
+			url: "https://webdev-api.loftschool.com/sendmail",
+			method: "post",
+			data: {
+				name: name.val(),
+				phone: phone.val(),
+				comment: comment.val(),
+				to: to.val()
+			},
+			success: data => {
+				content.text(data.message)
+				// console.log(data);
+				$.fancybox.open({
+					src: "#deliveryOverlay",
+					type: "inline"
+				});
+			},
+			error: data => {
+				const message = data.responseJSON.message;
+				content.text(message);
+				content.addClass("error-modal");
+
+				$.fancybox.open({
+					src: "#deliveryOverlay",
+					type: "inline"
+				});
+			}
+		});
+	}
 });
 
-//кнопка "закрыть"
-
+//кзакрытие модального окна по кнопке "Закрыть"
 $("#deliveryOverlay").click(e => {
 	e.preventDefault();
 

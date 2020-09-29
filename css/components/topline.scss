@@ -16,6 +16,9 @@
 			z-index: 50;
 			margin-top: 20%;
 		}
+		@include phones {
+    	left: 29%;
+		}
 	}
 	&--team {
 		margin-top: 10%;
