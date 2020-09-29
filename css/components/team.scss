@@ -41,7 +41,7 @@
 		font-size: rem(21px);
 		width: rem(221px);
 		margin-bottom: rem(8px);
-		
+		position: relative;
 	}
 	&__content {
 		display: flex;
@@ -57,7 +57,7 @@
 		}
 	}
 	&__content-block {
-		height: rem(300px);
+		// height: rem(300px);
 	}
 	&__prof-title {
 		font-weight: 400;

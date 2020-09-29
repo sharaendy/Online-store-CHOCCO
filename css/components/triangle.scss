@@ -1,0 +1,15 @@
+.triangle {
+		width: 0;
+		height: 0;
+		border: 6px solid transparent;
+		border-top-color: #365A49;
+		display: inline-block;
+		margin-left: rem(8px);
+		// transform: rotate(0deg);
+		&--reverse {
+			transform: rotate(-180deg);
+			// border-top-color: #fff;
+			// border-bottom-color: #365A49;
+			transition: 0.2s;
+		}
+}

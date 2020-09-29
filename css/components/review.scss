@@ -68,6 +68,7 @@
 		margin-bottom: rem(12px);
 		@include tablets {
 			margin-bottom: rem(0px);
+			text-align: center;
 		}
 	}
 	&__text {
