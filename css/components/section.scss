@@ -18,7 +18,7 @@
 			bottom: -20%;
 			right: 0;
 			width: rem(196px);
-			// height: rem(453px);
+			height: rem(453px);
 		}
 // Декор справа ягоды
 		&::before {
@@ -37,5 +37,26 @@
 				right: 0;
 			}
 		}
+	}
+	&--team {
+		&::before {
+			content: "";
+			position: absolute;
+			background-image: url("../../img/3-3_team/team/berry.png");
+			background-size: auto auto;
+			background-repeat: no-repeat;
+			width: rem(110px);
+			height: rem(120px);
+			top: 92%;
+			left: 19%;
+		}
+	}
+	&--mainMenu {
+		background-color:lightgray;
+		background-image: url(./../../img/2-3_menu/mainBackground.png);
+		background-size: cover;
+		background-position: center center;
+		background-repeat: no-repeat;
+		position: relative;
 	}
 }

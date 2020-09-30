@@ -23,6 +23,10 @@
 	&--team {
 		margin-top: 10%;
 	}
+	&--mainMenu {
+		margin-top: rem(110px);
+		margin-left: rem(84px);
+	}
 	&--deliver {
 		margin-bottom: rem(60px);
 	}
@@ -35,6 +39,10 @@
 		font-weight: bold;
 		color: $dark;
 		text-align: center;
+		&--colorWhite {
+			color: #ffffff;
+		}
+
 		&-color {
 			color: #365A49;
 		}

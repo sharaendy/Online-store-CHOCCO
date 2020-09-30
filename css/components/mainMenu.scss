@@ -1,0 +1,64 @@
+.mainMenu {
+	position: absolute;
+	display: flex;
+	bottom: 0;
+	right: 0;
+	top: 0;
+	&__item {
+		display: flex;
+	}
+	&__title {
+		width: rem(100px);
+		position: relative;
+		display: flex;
+	}
+	&__text {
+    position: absolute;
+    color: #fff;
+		font-weight: 700;
+		font-size: rem(48px);
+    transform: rotate(270deg);
+		transform-origin: bottom left;
+		width: rem(500px);
+		height: rem(50px);
+    bottom: 5%;
+    left: 67%;
+	}
+	&__image {
+		height: 100%;
+	}
+	&__content {
+		width: 0;
+		background-color: rgba(47, 50, 52, 0.9);
+		position: relative;
+		overflow: hidden;
+		transition: width .7s;
+	}
+	&__container {
+		padding: rem(40px) rem(73px) rem(45px) rem(26px);
+	}
+	&__close {
+		position: absolute;
+		right: 5%;
+		top: 3%;
+			&:before, &:after {
+			content: '';
+			position: absolute;
+			width: rem(20px);
+			height: rem(20px);
+			width: 4px;
+			background-color: #fff;
+			}
+			&::before {
+			transform: rotate(45deg);
+			}
+			&::after {
+			transform: rotate(-45deg);
+			}
+	}
+	&__content-text {
+		font-weight: 400;
+		font-size: rem(16px);
+		color: #fff;
+	}
+}
