@@ -51,6 +51,13 @@
 			left: 19%;
 		}
 	}
+	&--player {
+		background-image: url(./../../img/3-4_player/leaf_1.png),url(./../../img/3-4_player/leaf_2.png);
+		background-size: auto auto;
+		background-position: left 10% bottom 25%, right 15% top 10%;
+		background-repeat: no-repeat;
+		position: relative;
+	}
 	&--mainMenu {
 		background-color:lightgray;
 		background-image: url(./../../img/2-3_menu/mainBackground.png);

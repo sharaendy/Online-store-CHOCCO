@@ -20,7 +20,7 @@
 		<div class="mainContent">
 
 			<!--! Секция 1 "Приветствие"-->
-			<section class="section welcom">
+			<section class="section welcom" data-section-id="welcom">
 				<!-- Контейнер "Приветствие" -->
 				<div class="container welcom__container">
 					<!-- Шапка -->
@@ -33,13 +33,13 @@
 						<nav class="menu">
 							<ul class="menu__list">
 								<!-- ? href скорее всего якори. Пока не трогать -->
-								<li class="menu__item"><a href="#" class="menu__link">О нас</a></li>
-								<li class="menu__item"><a href="#" class="menu__link">Батончики</a></li>
-								<li class="menu__item"><a href="#" class="menu__link">Команда</a></li>
-								<li class="menu__item"><a href="#" class="menu__link">Меню</a></li>
-								<li class="menu__item"><a href="#" class="menu__link">Отзывы</a></li>
-								<li class="menu__item"><a href="#" class="menu__link">Как мы работаем</a></li>
-								<li class="menu__item"><a href="#" class="menu__link">Контакты</a></li>
+								<li class="menu__item"><a href="#" data-scroll-to="wherefore" class="menu__link">О нас</a></li>
+								<li class="menu__item"><a href="#" data-scroll-to="slider" class="menu__link">Батончики</a></li>
+								<li class="menu__item"><a href="#" data-scroll-to="team" class="menu__link">Команда</a></li>
+								<li class="menu__item"><a href="#" data-scroll-to="mainMenu" class="menu__link">Меню</a></li>
+								<li class="menu__item"><a href="#" data-scroll-to="reviews" class="menu__link">Отзывы</a></li>
+								<li class="menu__item"><a href="#" data-scroll-to="player" class="menu__link">Как мы работаем</a></li>
+								<li class="menu__item"><a href="#" data-scroll-to="map" class="menu__link">Контакты</a></li>
 							</ul>
 						</nav>
 
@@ -91,7 +91,7 @@
 								<p>Наши батончики идеально подходят для тех, кто следит за своим здоровьем</p>
 							</div>
 							<div class="btn-welcom">
-								<a href="#" class="btn btn--white">Заказать</a>
+								<a href="#" data-scroll-to="deliver" class="btn btn--white">Заказать</a>
 							</div>
 						</div>
 						<div class="hero__image-wrapper">
@@ -132,7 +132,7 @@
 			</section>
 
 			<!--! Секция 2 "Почему CHOCCO"-->
-			<section class="section wherefore">
+			<section class="section wherefore" data-section-id="wherefore">
 				<!-- Контейнер "Почему" -->
 				<div class="container">
 					<div class="topline topline--wherefore">
@@ -206,7 +206,7 @@
 			</section>
 
 			<!-- ! Секция 2-2 "Слайдер" -->
-			<section class="section section--slider">
+			<section class="section section--slider" data-section-id="slider">
 				<div class="container">
 					<div class="main-content main-content--slider">
 						<div class="slider-control">
@@ -309,7 +309,7 @@
 
 										<div class="slider__order">
 											<div class="slider__price">140 ₽</div>
-											<a href="#" class="btn btn--green">Заказать</a>
+											<a href="#" data-scroll-to="deliver" class="btn btn--green">Заказать</a>
 										</div>
 
 									</div>
@@ -411,7 +411,7 @@
 
 										<div class="slider__order">
 											<div class="slider__price">150 ₽</div>
-											<a href="#" class="btn btn--green">Заказать</a>
+											<a href="#" data-scroll-to="deliver" class="btn btn--green">Заказать</a>
 										</div>
 
 									</div>
@@ -426,7 +426,7 @@
 			</section>
 
 			<!-- !Секция 3-3 "Команда" -->
-			<section class="section section--team">
+			<section class="section section--team" data-section-id="team">
 				<div class="container">
 					<div class="topline topline--team">
 						<h2 class="topline__title topline__title-h2">Команда</h2>
@@ -554,7 +554,7 @@
 			</section>
 
 			<!-- !Секция 2-3 Горизонтальное меню -->
-			<section class="section section--mainMenu">
+			<section class="section section--mainMenu" data-section-id="mainMenu">
 				<!-- Контейнер Меню -->
 				<div class="main-content main-content--mainMenu">
 					<div class="topline topline--mainMenu">
@@ -622,7 +622,7 @@
 			</section>
 
 			<!--! Секция 3 "Отзывы"-->
-			<section class="section reviews">
+			<section class="section reviews" data-section-id="reviews">
 				<!--Контейнер "Отзывы"-->
 				<div class="container">
 					<div class="topline topline--rewies">
@@ -721,8 +721,35 @@
 				</div>
 			</section>
 
+			<!-- ! Секция 3-3 "Плэйер" -->
+			<section class="section section--player" data-section-id="player">
+				<div class="container">
+					<div class="topline topline--player">
+						<h2 class="topline__title topline__title-h2 topline__title-h2-color">Как мы работаем</h2>
+					</div>
+
+					<div class="player">
+						<div class="player__wrapper">
+							<div id="yt-player" class="player__elem"></div>
+							<div class="player__splash"></div>
+						</div>
+						<div class="player__controls">
+							<button class="player__start"></button>
+							<div class="player__playback">
+								<button class="player__playback-button"></button>
+							</div>
+							<div class="player__duration">
+								<span class="player__duration-completed">0:00</span> :
+								<span class="player__duration-estimate">0:00</span>
+							</div>
+						</div>
+					</div>
+
+				</div>
+			</section>
+
 			<!--! Секция 4 "Доставка"-->
-			<section class="section deliver">
+			<section class="section deliver" data-section-id="deliver">
 				<div class="container">
 					<div class="topline topline--deliver">
 						<!-- TODO Оптимизировать костыль (возможно inherite)-->
@@ -819,22 +846,22 @@
 			</section>
 
 			<!-- ! Секция 5 "Карта" -->
-			<section class="map">
+			<section class="section section--map" data-section-id="map">
+				<div id="ymap"></div>
 			</section>
 
 			<!-- ! Секция 6 "Футер" -->
-			<section class="footer">
+			<section class="footer" data-section-id="footer">
 				<div class="container">
 					<div class="main-content main-content--footer">
 
 						<!-- Адрес футер -->
 						<div class="footer__col footer__col-left">
-							<div class="footer__address">Москва, ул.Новый Арбат, д.31/12</div>
+							<div class="footer__address">Томск, пр.Ленина, д.30</div>
 							<address class="phone ">
 								<a href="tel:+78009039090" class="phone__number phone__number-footer">8 800 903 90 90</a>
 							</address>
 						</div>
-
 						<!-- Социальные иконки футер -->
 						<div class="footer__col-right">
 							<ul class="socials">
@@ -884,31 +911,31 @@
 	<nav class="fixed-menu">
 		<ul class="fixed-menu__list">
 			<li class="fixed-menu__item fixed-menu__item--active">
-				<a href="" class="fixed-menu__link"></a>
+				<a href="" class="fixed-menu__link" data-scroll-to="welcom"></a>
 			</li>
 			<li class="fixed-menu__item">
-				<a href="" class="fixed-menu__link"></a>
+				<a href="" class="fixed-menu__link" data-scroll-to="wherefore"></a>
 			</li>
 			<li class="fixed-menu__item">
-				<a href="" class="fixed-menu__link"></a>
+				<a href="" class="fixed-menu__link" data-scroll-to="slider"></a>
 			</li>
 			<li class="fixed-menu__item">
-				<a href="" class="fixed-menu__link"></a>
+				<a href="" class="fixed-menu__link" data-scroll-to="team"></a>
 			</li>
 			<li class="fixed-menu__item">
-				<a href="" class="fixed-menu__link"></a>
+				<a href="" class="fixed-menu__link" data-scroll-to="mainMenu"></a>
 			</li>
 			<li class="fixed-menu__item">
-				<a href="" class="fixed-menu__link"></a>
+				<a href="" class="fixed-menu__link" data-scroll-to="reviews"></a>
 			</li>
 			<li class="fixed-menu__item">
-				<a href="" class="fixed-menu__link"></a>
+				<a href="" class="fixed-menu__link" data-scroll-to="player"></a>
 			</li>
 			<li class="fixed-menu__item">
-				<a href="" class="fixed-menu__link"></a>
+				<a href="" class="fixed-menu__link" data-scroll-to="deliver"></a>
 			</li>
 			<li class="fixed-menu__item">
-				<a href="" class="fixed-menu__link"></a>
+				<a href="" class="fixed-menu__link" data-scroll-to="map"></a>
 			</li>
 		</ul>
 	</nav>
@@ -931,6 +958,10 @@
 	<!-- !Отзывы переключатель -->
 	<script src="./js/reviews.js"></script>
 
+	<!-- !Youtube API iframe -->
+	<script src="https://www.youtube.com/iframe_api"></script>
+	<script src="./js/player.js"></script>
+
 	<!-- !Аккордеон секция "Меню"-->
 	<script src="./js/menuAccordeon.js"></script>
 
@@ -942,6 +973,10 @@
 
 	<!-- !Модальное меню о заказе продукции -->
 	<script src="./js/deliveryModal.js"></script>
+
+	<!-- !Яндекс карты API -->
+	<script src="https://api-maps.yandex.ru/2.1/?apikey=ваш API-ключ&lang=ru_RU" type="text/javascript"></script>
+	<script src="./js/map.js"></script>
 
 
 </body>

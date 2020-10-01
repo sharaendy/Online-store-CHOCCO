@@ -1,12 +1,4 @@
-.map {
-	// max-width: rem(1100px);
-	min-height: 100vh;
-	background-image: url("../../img/5_map/map.png");
-	background-position: 100% 100%;
-	background-repeat: no-repeat;
-	background-size: cover;
-	margin: 0 auto;
-// &__image {
-// 		object-fit: cover;
-// 	}
+#ymap {
+	height: 100%;
+	width: 100%;
 }

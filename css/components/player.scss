@@ -1,0 +1,106 @@
+.player {
+	position: relative;
+	display: block;
+	width: rem(660px);
+	height: rem(405px);
+	margin-left: auto;
+	margin-right: auto;
+	&.played .player__splash {
+		display: none;
+	}
+	&.paused {
+		.player__start {
+			width: rem(14px);
+			height: rem(22px);
+			border: none;
+
+			&::after,
+			&::before {
+				content: "";
+				display: block;
+				position: absolute;
+				width: rem(5px);
+				top: rem(9px);
+				bottom: rem(9px);
+				background: #626262;
+			}
+			&::after {
+				// right: 0;
+			}
+			&::before {
+				left: 6%;
+			}
+		}
+	}
+	&__wrapper {
+		position: relative;
+	}
+	&__splash {
+		position: absolute;
+		top: 0;
+		right: 0;
+		bottom: 0;
+		left: 0;
+		cursor: pointer;
+		background-image: url(./../../img/3-4_player/play_triangle.png), url(./../../img/3-4_player/splash.png);
+		background-size: rem(75px) rem(110px), cover;
+		background-position: center center;
+		background-repeat: no-repeat;
+		max-width: rem(660px);
+		max-height: rem(407px);
+	}
+	&__controls {
+		position: absolute;
+		top: 100%;
+		right: 0;
+		bottom: 0;
+		left: 0;
+		background-color: #404040;
+		height: rem(35px);
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		padding: rem(0px) rem(25px);
+	}
+	&__start {
+		width: 0;
+		height: 0;
+		border: rem(8px) solid transparent;
+		border-left-color: #626262;
+		display: inline-block;
+		margin-left: rem(18px);
+		outline: none;
+	}
+	&__playback {
+		height: rem(16px);
+		width: rem(446px);
+		position: relative;
+		&::before {
+			content: "";
+			height: rem(4px);
+			position: absolute;
+			top: 50%;
+			left: 0;
+			right: 0;
+			background: #626262;
+			display: block;
+			transform: translateY(-50%);
+		}
+		&-button {
+			background: #626262;
+			border-radius: 50px;
+			border: none;
+			height: rem(12px);
+			width: rem(12px);
+			padding: 0;
+			position: absolute;
+			top: 50%;
+			transform: translate(-50%, -50%);
+			left: 0;
+		}
+	}
+}
+
+
+
+
