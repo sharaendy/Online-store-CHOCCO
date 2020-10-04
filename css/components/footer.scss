@@ -2,6 +2,10 @@
 	display: flex;
 	align-items: center;
 	min-height: rem(93px);
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	background: #fff;
 	&__col-left {
 		display: flex;
 		flex-direction: column;

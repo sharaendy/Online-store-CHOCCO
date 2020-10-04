@@ -32,7 +32,7 @@ const closeEveryItemInContainer = (container) => {
 	content.width(0);
 }
 
-const openItem = (item) => {
+const openItemTeam = (item) => {
 	const hiddenContent = item.find(".mainMenu__content");
 	const reqWidth = mesureWidth(item);
 	const textBlock = item.find(".mainMenu__container");
@@ -54,7 +54,7 @@ $(".mainMenu__title").on("click", (e) => {
 		closeEveryItemInContainer(container)
 	} else {
 		closeEveryItemInContainer(container)
-		openItem(item);
+		openItemTeam(item);
 	}
 });
 
