@@ -1,0 +1,136 @@
+.main-content {
+	display: flex;
+	&--wherefore {
+		justify-content: space-between;
+		margin-top: rem(49px);
+		margin-bottom: rem(100px);
+		flex: 1 1;
+		width: 97%;
+		@include phones {
+			margin-bottom: 0;
+			flex-direction: column;
+		}
+	}
+	&--slider {
+		// margin-top: 20%;
+		// display: flex;
+	}
+	&--review {
+		flex-direction: column;
+		margin-top: 20%;
+	}
+	&--team {
+		@include tablets {
+			justify-content: center;
+			padding: 0% 10%;
+			align-items: center;
+			// height: 80%;
+			// flex: 1;
+		}
+	}
+	&--deliver {
+		flex-direction: row;
+	}
+	&--footer {
+		justify-content: space-between;
+		align-items: center;
+		@include phones {
+			flex-direction: column;
+			align-items: center;
+		}
+	}
+	&__col {
+		display: flex;
+		align-items: center;
+		height: 100vh;
+	}
+
+	&__item {
+		display: flex;
+		flex-direction: column;
+		justify-content: flex-start;
+		align-items: center;
+		max-width: rem(300px);
+		position: relative;
+		@include phones {
+			flex-direction: row;
+			max-width: 100%;
+			margin-bottom: rem(31px);
+		}
+		&::before {
+			content:url("../../img/2_wherefore/itemSeparator.png");
+			position: absolute;
+			top: rem(50px);
+			right: rem(0px);
+			transform: translateX(50%);
+			@include tablets {
+				display: none;
+			}
+			}
+		&:last-child {
+			&::before {
+				display: none;
+			}
+		}
+	}
+	
+	&__pic-wrapper {
+		display: inline-block;
+		position: relative;
+		width: rem(128px);
+		height: rem(128px);
+		border-radius: 50%;
+		background-color: $bg-grey;
+		overflow: hidden;
+	}
+	
+	&__pic {
+		text-align: center;
+	}
+
+	&__img {
+		width: rem(75px);
+		height: rem(69px);
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		fill: #292929;
+
+	}
+	
+	&__title {
+		font-weight: bold;
+		font-size: rem(27px);
+		line-height: rem(32px);
+		color: $dark;
+		margin-top: rem(14px);
+		text-align: center;
+		@include phones {
+			text-align: left;
+			margin-top: 0;
+		}
+	}
+	&__text {
+		font-size: $baseFontSize;
+		line-height: rem(22px);
+		font-weight: rem(300px);
+		text-align: center;
+		max-width: rem(280px);
+		margin-top: rem(20px);
+		@include phones {
+			text-align: left;
+			margin-top: 0;
+			max-width: 95%;
+			margin-top: rem(14px);
+		}
+	}
+	&__wrapper-phone {
+		@include phones {
+		display: flex;
+		flex-direction: column;
+		margin-left: 5%;
+		justify-content: center;
+	}
+}
+}

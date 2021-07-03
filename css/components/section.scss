@@ -1,0 +1,69 @@
+.section {
+	position: relative;
+	display: flex;
+	height: 100vh;
+	
+	&--slider {
+	display: flex;
+	align-items: center;
+	flex: 1;
+	background-color: #F8FAF9;
+	// Декор справа Паттер Пальма
+		&::after {
+			content: '';
+			background-image: url("../../img/2-2_slider/decor_pattern.png");
+			background-size: contain;
+			background-repeat: no-repeat;
+			position: absolute;
+			bottom: -20%;
+			right: 0;
+			width: rem(196px);
+			height: rem(453px);
+		}
+// Декор справа ягоды
+		&::before {
+			content: '';
+			background-image: url("../../img/2-2_slider/decor_berry.png");
+			background-size: contain;
+			background-repeat: no-repeat;
+			position: absolute;
+			bottom: -8%;
+			right: 0;
+			width: rem(135px);
+			height: rem(112px);
+			z-index: 11;
+			@include tablets {
+				bottom: 0;
+				right: 0;
+			}
+		}
+	}
+	&--team {
+		&::before {
+			content: "";
+			position: absolute;
+			background-image: url("../../img/3-3_team/team/berry.png");
+			background-size: auto auto;
+			background-repeat: no-repeat;
+			width: rem(110px);
+			height: rem(120px);
+			top: 92%;
+			left: 19%;
+		}
+	}
+	&--player {
+		background-image: url(./../../img/3-4_player/leaf_1.png),url(./../../img/3-4_player/leaf_2.png);
+		background-size: auto auto;
+		background-position: left 10% bottom 25%, right 15% top 10%;
+		background-repeat: no-repeat;
+		position: relative;
+	}
+	&--mainMenu {
+		background-color:lightgray;
+		background-image: url(./../../img/2-3_menu/mainBackground.png);
+		background-size: cover;
+		background-position: center center;
+		background-repeat: no-repeat;
+		position: relative;
+	}
+}

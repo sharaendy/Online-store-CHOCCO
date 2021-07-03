@@ -1,0 +1,138 @@
+.review {
+	min-height: rem(280px);
+
+	&__item, .active {
+		opacity: 1;
+		display: flex;
+		// position: static;
+	}
+	&__item {
+	display: none;
+	// position: absolute;
+	// transition: opacity .3s;
+	// top: 0;
+	// right: 0;
+	// bottom: 0;
+	// left: 0;
+	// opacity: 0;
+	background: url(../../img/3_reviews/leaf.png) right top rem(20px) no-repeat;
+	background-color: #F8FAF9;
+	padding: rem(42px) rem(142px) rem(42px) rem(42px);
+	overflow: hidden;
+	max-width: rem(940px);
+	@include tablets {
+		flex-direction: column;
+		align-items: center;
+		padding: rem(42px) rem(42px) rem(42px) rem(42px);
+		margin-bottom: rem(50px);
+	}
+
+	&::before {
+		content: "";
+		display: block;
+		width: rem(90px);
+		height: rem(90px);
+		background: $white;
+		border-radius: 50%;
+		position: absolute;
+		left: 50%;
+		transform: translateX(-50%);
+		top: rem(-65px);
+		margin-top: 20%;
+	}}
+	&__pic {
+		margin-right: rem(40px);
+		@include tablets {
+			width: 130px;
+			height: 130px;
+			margin: rem(56px) 0 rem(32px) 0;
+		}
+		
+	}
+	&__content {
+		display: flex;
+		flex: 1;
+		flex-direction: column;
+		align-items: flex-start;
+		padding: rem(32px) rem(0px) rem(0px) rem(0px);
+		@include tablets {
+			align-items: center;
+			padding: rem(0px) rem(0px) rem(0px) rem(0px);
+		}
+	}
+	&__title {
+		font-weight: bold;
+		font-size: rem(27px);
+		line-height: rem(32px);
+		color: $dark;
+		margin-bottom: rem(12px);
+		@include tablets {
+			margin-bottom: rem(0px);
+			text-align: center;
+		}
+	}
+	&__text {
+		max-width: rem(435px);
+		font-size: $baseFontSize;
+		line-height: rem(22px);
+		font-weight: rem(300px);
+		text-align: left;
+		margin-bottom: rem(25px);
+		@include tablets {
+			text-align: center;
+			max-width: 93%;
+			margin-bottom: rem(0px);
+		}
+		
+	}
+	&__author {
+		max-width: rem(463px);
+		font-size: $baseFontSize;
+		line-height: rem(24px);
+		font-weight: 500;
+		text-align: left;
+		@include tablets {
+			margin-top: 3%;
+		}
+	}
+
+	&-selector {
+		display: flex;
+		justify-content: center;
+		width: 100%;
+		margin-top: rem(25px);
+		margin-bottom: rem(60px);
+		&__item, .active {
+			border: rem(4px) solid $green;
+		}
+		&__item {
+			margin-right: rem(6px);
+			width: rem(80px);
+			height: rem(80px);
+			border: rem(4px) solid transparent;
+			border-radius: 50%;
+			overflow: hidden;
+			position: relative;
+
+		@include tablets {
+			width: rem(73px);
+			height: rem(73px);
+		}
+		}
+		&__link {
+			position: absolute;
+			top: 0;
+			left: 0;
+			bottom: 0;
+			right: 0;
+			display: block;
+		}
+		&__pic {
+			display: block;
+			width: 100%;
+			height: 100%;
+			object-fit: cover;
+		}
+	}
+
+}

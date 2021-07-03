@@ -1,0 +1,44 @@
+.dropdownMenu {
+	position: absolute;
+	display: none;
+	left: 100%;
+	top: 0;
+	width: rem(273px);
+	height: rem(344px);
+	background: rgba(255, 255, 255, 0.9);
+	box-shadow: 4px 4px 40px rgba(0, 0, 0, 0.06);
+	border-radius: 4px;
+	padding: rem(22px) rem(25px) rem(30px) rem(30px);
+	@include tablets {
+		left: 67.5%;
+		top: 24%;
+	}
+	&__list {
+		display: flex;
+		flex-direction: column;
+		align-items: flex-start;
+	}
+	&__item {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		margin-bottom: 10%;
+	}
+	&__img {
+		width: rem(32px);
+		height: rem(32px);
+		object-fit: cover;
+		margin-right: 5%;
+	}
+	&__text {
+		display: flex;
+		justify-content: space-between;
+		width: rem(182px);
+	}
+	&__name {
+		font-weight: 500;
+	}
+	&__weight {
+		font-weight: 400;
+	}
+}

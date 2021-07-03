@@ -1,0 +1,55 @@
+.welcom {
+	background-color:$bg-blue;
+	// Голубой лист справа внизу
+	background-image: url("../../img/1_welcom/leafs.png");
+	background-size: auto auto;
+	background-position: right bottom;
+	background-repeat: no-repeat;
+	font-size: $baseFontSize;
+	color: $white;
+	@include tablets {
+		background-position: right top 35%;
+	}
+	@include phones {
+		background-position: right bottom 95%;
+    background-size: 69% 60%;
+	}
+	&__container{
+		display: flex;
+		flex-direction: column;;
+		justify-content: space-between;
+		height: 100%;
+		padding: rem(24px) 0 rem(50px) 0;
+	}
+
+// Декор Слева: листочек
+	&::before {
+		content: '';
+		background-image: url("../../img/1_welcom/LeafSingle.png");
+		background-size: contain;
+		position: absolute;
+		bottom: -6%;
+		left: 10%;
+		width: rem(59px);
+		height: rem(112px);
+
+		@include tablets {
+			display: none;
+		}
+	}
+
+// Декор Правая часть: листья, ягоды
+	&::after {
+		content: '';
+		background-image: url(../../img/1_welcom/leafsMainDecor.png);
+		background-size: contain;
+		position: absolute;
+		bottom: -6%;
+		right: 0;
+		width: rem(465px);
+		height: rem(590px);
+		@include tablets {
+			display: none;
+		}
+	}
+}

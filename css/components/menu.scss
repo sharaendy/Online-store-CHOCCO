@@ -1,0 +1,24 @@
+.menu { 
+	display: flex;
+	margin-right: auto;
+	&__list {
+		display: flex;
+		vertical-align: middle;
+		flex-wrap: wrap;
+		margin-left: -1.5rem;
+	}
+	&__item {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		margin-left: rem(27px);
+		height: rem(30px);
+		white-space: nowrap;
+		&:last-child {
+			margin-right: rem(0px);
+		}
+	}
+	@include tablets {
+		display: none;
+	}
+}

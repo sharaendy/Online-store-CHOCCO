@@ -1,0 +1,24 @@
+.composition {
+	display: flex;
+	position: relative;
+	background-color: #86C3D7;
+	border-radius: 4px;
+	width: rem(91px);
+	height: rem(91px);
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	&__img {
+		margin-bottom: rem(4px);
+	}
+	&__title {
+		text-align: center;
+		text-transform: uppercase;
+		color: #fff;
+		font-weight: 700;
+	}
+
+	&:hover {
+		background-color: #60AACC;
+		}
+	}

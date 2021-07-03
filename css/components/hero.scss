@@ -1,0 +1,75 @@
+.hero {
+	display: flex;
+	@include tablets {
+		display: flex;
+		// width: 100%;
+		flex: 1;
+		flex-direction: column;
+		justify-content: center;
+		// align-items: center;
+		text-align: center;
+		// &::before {
+		// 	content: url(../../img/1_welcom/chocolatsAndLeafes.png);
+		// }
+	}
+	&__title {
+		max-width: rem(353px);
+		margin-top: rem(84px);
+		@include tablets {
+			max-width: 100%;
+			text-align: center;
+			margin-top: rem(14px);
+			// margin-top: rem(82px);
+		}
+		@include phones {
+			max-width: 98%;
+			text-align: center;
+			margin-top: rem(14px);
+			// margin-top: rem(82px);
+		}
+	}
+	&__title--size--L {
+		font-size: rem(48px);
+		line-height: rem(58px);
+		font-weight: bold;
+		text-transform: uppercase;
+		@include phones {
+			line-height: rem(52px);
+		}
+		
+	}
+	&__content {
+		font-size:rem(21px);
+		max-width: rem(371px);
+		margin-top: rem(18px);
+		@include tablets {
+			max-width: 100%;
+			padding: 0 27% 0 27%;
+			text-align: center;
+			// margin-top: rem(82px);
+		}
+		@include phones {
+			padding: 0 16% 0 16%;
+		}
+	}
+	&__img {
+		position: relative;
+		@include tablets {
+			display: none;
+		}
+	}
+	&__tablets-img {
+		position: relative;
+		display: none;
+		@include tablets {
+			display: inline-block;
+			text-align: center;
+			max-width: 50%;
+		}
+		@include phones {
+			display: inline-block;
+			text-align: center;
+			max-width: 70%;
+		}
+	}
+}

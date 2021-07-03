@@ -1,0 +1,64 @@
+// !Переменные
+//Цвета
+$white: #FFFFFF;
+$dark: #292929;
+$green:#497870; 
+$grey:#666666;
+	//Фоновые цвета
+	$bg-blue: #61C4D9;
+	$bg-grey: #F2F5F4;
+	$bg-lightGrey: #F8FAF9;
+
+//Шрифты
+$baseFontSize: 18px;
+
+//Брэйкпоинты
+$tablets: 768px;
+$phones: 480px;
+
+
+
+
+//!Приоритеты
+//Навигационное меню по страницам. Точки. Справа
+$z-fixed-menu: 100;
+$z-modal-menu: 1000;
+
+
+
+
+//!Функции
+@function rem($px) {
+	@return $px / $baseFontSize + 0rem;
+}
+
+
+
+
+// !Примеси
+@mixin tablets {
+	@media screen and (max-width:$tablets) {
+		@content;
+	}
+}
+
+@mixin phones {
+	@media screen and (max-width:$phones) {
+		@content;
+	}
+}
+
+
+
+
+html {
+	font-size: $baseFontSize;
+
+	@include tablets {
+		font-size: $baseFontSize - 1px;
+	}
+
+	@include phones {
+		font-size: $baseFontSize - 2px;
+	}
+}

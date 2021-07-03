@@ -1,0 +1,23 @@
+{
+	"name": "public_html",
+	"version": "1.0.0",
+	"description": "Студент - <b>Андрей Шараевский</b> <br>\r Наставник - <b>Максим Иванов</b> <br>\r Проект - <b>CHOCCO</b> <br>\r Курс - <b>\"Веб разработка для начинающих\"</b>",
+	"main": "index.js",
+	"scripts": {
+		"gulp": "gulp"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/sharaendy/project_2.git"
+	},
+	"keywords": [],
+	"author": "",
+	"license": "ISC",
+	"bugs": {
+		"url": "https://github.com/sharaendy/project_2/issues"
+	},
+	"homepage": "https://github.com/sharaendy/project_2#readme",
+	"devDependencies": {
+		"gulp": "^4.0.2"
+	}
+}

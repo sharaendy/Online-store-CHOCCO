@@ -1,0 +1,49 @@
+.btn {
+	width:rem(155px);
+	height:rem(60px);
+	font-weight: 800;
+	border-radius:rem(100px);
+	border: none;
+	font-size:rem(16px);
+	line-height: rem(18px);
+	text-align: center;
+	text-transform: uppercase;
+	padding: rem(22px) rem(41px); 
+	&--white {
+		background-color: $white;
+		color: $green ;
+		&:hover {
+			color: $white;
+			background: $green;
+		}
+	}
+	&--green {
+		background-color: $green;
+		color: $white;
+		&:hover {
+			color: $green;
+			background: $white;
+		}
+	}
+	&--transp {
+		background-color: transparent;
+		color: #497870;
+		text-transform: none;
+		font-weight: normal;
+		&:hover {
+			color: #000000;
+		}
+	}
+	&-welcom {
+		margin-top:rem(53px);
+		@include tablets {
+			padding: 0 40% 0 40%;
+		}
+		@include phones {
+			padding: 0;
+		}
+	}
+	&-deliver {
+		margin-right:rem(20px);
+	}
+}

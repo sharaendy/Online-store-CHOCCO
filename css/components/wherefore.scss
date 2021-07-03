@@ -1,0 +1,28 @@
+.wherefore {
+	flex-direction: column;
+	justify-content: center;
+	// Декор паттерн-лист слева
+	background-image: url("../../img/2_wherefore/design.png");
+	background-size: auto auto;
+	background-position: left center;
+	background-repeat: no-repeat;
+	@include tablets {
+		background-position: left top 15%;
+	}
+	@include phones {
+		background-image: none;
+	}
+		&::before {
+			content: '';
+			background-image: url("../../img/2_wherefore/raspberry.png");
+			background-size: contain;
+			position: absolute;
+			bottom: -11%;
+			left: 0;
+			width: rem(135px);
+			height: rem(270px);
+			@include phones {
+				display: none;
+			}
+		}
+}
