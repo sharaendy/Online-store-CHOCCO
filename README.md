@@ -1,6 +1,10 @@
 ### Description
 
-CHOCCO (Landing) online store - single-page site, adapted to the different resolutions of the screens of devices.
+**CHOCCO** (Landing) online store - single-page site, adapted to the different resolutions of the devices screens .
+
+### Link
+
+[chocco.surge.sh](http://chocco.surge.sh/)
 
 ### Implemented:
 
