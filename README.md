@@ -1,6 +1,7 @@
 ### Description
 
-**CHOCCO** (Landing) online store - single-page site, adapted to the different resolutions of the devices screens .
+**CHOCCO** (Landing) online store - single-page site, adapted to the different resolutions of the devices screens. 
+I am using native javascript, jquerry, Yandex API, etc.
 
 ### Link
 
